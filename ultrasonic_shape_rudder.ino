@@ -1,5 +1,3 @@
-// File: ultrasonic_array_shape.ino
-
 #include <NewPing.h>
 
 // === Configuration ===
