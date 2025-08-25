@@ -41,61 +41,52 @@
 <p><a href="https://ko-fi.com/saadw50"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="saadw50" /></a></p><br><br>
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=saadw50&show_icons=true&locale=en&layout=compact" alt="saadw50" /></p>
-
 ---
 
-## Project Overview
+### **Contributing**
+I welcome contributions to enhance this ultrasound phased array project! Whether it's improving the beamforming algorithm, optimizing the circuit design, or adding new features, your input is valuable. Here's how you can contribute:
 
-This project is a real-time 2D shape detection system built using a static array of ultrasonic sensors (HC-SR04) connected to an ESP32 microcontroller. The system detects object profiles (walls, curves, people, corners) by analyzing the distance readings from multiple fixed-angle sensors, creating a rudder-style scan without any servo motors.
+- **Fork the Repository**: Create your own copy of this project.
+- **Create a Branch**: Use a descriptive name (e.g., `feature/add-receiver-circuit`).
+- **Make Changes**: Implement your improvements or fixes.
+- **Submit a Pull Request**: Describe your changes, and I’ll review them.
+- **Code Standards**: Follow C/C++ conventions and comment your code.
+- **Issues**: Report bugs or suggest features via the [Issues tab](https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging/issues).
 
----
+### **License**
+This project is licensed under the MIT License. Feel free to use, modify, and distribute the code, provided you include the original copyright and license notice. See the [LICENSE](LICENSE) file for details.
 
-## 🧠 Features
+### **Acknowledgments**
+- **Inspiration**: Thanks to open-source communities and academic resources for guiding this project.
+- **Support**: Gratitude to my professors and peers at Jamalpur Science and Technology University for their guidance.
+- **Tools**: Special thanks to xAI's Grok for assisting with circuit design and troubleshooting (as of 07:24 PM +06, August 25, 2025).
+- **Hardware**: Acknowledgment to Nilkhet electronics market for affordable components like IRF540N and LM358N.
 
-- ✅ Multi-directional object detection using 5–8 ultrasonic sensors
-- ✅ No moving parts — fixed sensor array for better speed & durability
-- ✅ Real-time shape approximation (curved, flat, corner detection)
-- ✅ Data visualization in Python (radar/point plot)
-- ✅ Expandable design — add more sensors easily
-- ✅ Optional OLED/LCD display support
+### **Project Details**
+- **Objective**: Develop a servo-free 2D acoustic imaging system using an 8-transmitter, 1-receiver ultrasonic phased array, controlled by NodeMCU (ESP32), for applications like object detection or imaging.
+- **Hardware**:
+  - Microcontroller: NodeMCU (ESP32)
+  - Transmitters: 8 x 40 kHz piezoelectric transducers
+  - Receiver: 1 x 40 kHz transducer with LM358N amplification
+  - Driver: IRF540N MOSFETs with 10 kΩ resistors and 1N4007 diodes
+  - Power: 20 V DC for transmitters, 5 V for NodeMCU
+  - Capacitors: 100 nF (50 V) for receiver filtering
+- **Software**:
+  - Language: C/C++ (Arduino IDE)
+  - Features: Beamforming with 64 phase shifts, 400 µs pulses, 20 kHz ADC sampling
+  - Repository: [https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging](https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging)
+- **Status**: Under development; transmitter circuit tested, receiver in progress (updated as of 07:24 PM +06, August 25, 2025).
 
----
+### **Future Work**
+- Implement full 8-transmitter array with optimized phase delays.
+- Enhance receiver circuit with 1N4148 diodes for better signal clamping.
+- Integrate with Android Studio for real-time imaging using Google API.
+- Explore COMSOL for simulation of acoustic wave propagation.
 
-## 🛠️ Hardware Requirements
-
-| Component           | Quantity | Description                         |
-|---------------------|----------|-------------------------------------|
-| ESP32 Dev Board     | 1        | Core microcontroller (e.g., DOIT ESP32 DEVKIT V1) |
-| HC-SR04 Ultrasonic Sensors | 5–8    | For directional distance sensing    |
-| Jumper Wires        | Many     | For all GPIO connections            |
-| Breadboard          | 1        | Or custom PCB setup                 |
-| 5V Power Source     | 1        | USB power or battery pack           |
-| (Optional) OLED/LCD | 1        | For local display output            |
-
----
-
-## 🔌 Wiring (Example with 6 Sensors)
-
-| Sensor | TRIG Pin | ECHO Pin |
-|--------|----------|----------|
-| S1     | GPIO12   | GPIO13   |
-| S2     | GPIO14   | GPIO27   |
-| S3     | GPIO26   | GPIO25   |
-| S4     | GPIO33   | GPIO32   |
-| S5     | GPIO22   | GPIO21   |
-| S6     | GPIO19   | GPIO18   |
-
-> **Note**: Adjust pins in the code to match your layout.
-
----
-
-## 🧩 How It Works
-
-1. Each sensor measures distance in a specific fixed direction.
-2. Data is collected in real-time from all sensors.
-3. Output is sent over serial (USB) to PC.
-4. A Python script reads the data and plots the shape as a 2D radar/contour map.
-5. Optional: The ESP32 can also send distance/shape type to an OLED screen.
+### **Contact for Collaboration**
+For collaboration or questions, reach out via:
+- Email: **shadebnywahid@gmail.com** or **s23111212@bsfmstu.ac.bd**
+- Social Media: [Twitter](https://twitter.com/saadw50), [Facebook](https://fb.com/saadw50)
 
 ---
 
