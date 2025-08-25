@@ -6,7 +6,7 @@
 <p align="left"> <a href="https://twitter.com/saadw50" target="blank"><img src="https://img.shields.io/twitter/follow/saadw50?logo=twitter&style=for-the-badge" alt="saadw50" /></a> </p>
 
 - 🔭 I’m currently working on [🛰️ Utrasound phased array for 2D acoustic imaging using beamforming (Servo-Free)](https://github.com/saadw50/ultrasound_phased_array_for_2d_acustic_imaging/tree/main)
-- 🌱 I’m currently learning **Android Studio, COMSOL, Google API**
+- 🌱 I’m currently learning **Android Studio, COMSOL, Google API,Ubuntu, Beamforming, Quantum Espresso, DFT, Python, Overleaf**
 - 🤝 I’m looking for help with [Ultrasonic Shape Detection Rudder (Without Servo)](https://github.com/saadw50/ultrasonic_rudder/tree/main)
 - 👨‍💻 All of my projects are available at [www.facebook.com/saadw50](www.facebook.com/saadw50)
 - 📫 How to reach me **shadebnywahid@gmail.com**, **s23111212@bsfmstu.ac.bd**
