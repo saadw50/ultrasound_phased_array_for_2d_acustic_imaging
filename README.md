@@ -1,7 +1,7 @@
 # Ultrasound Phased Array for 2D Acoustic Imaging
 
 ![Project Banner](3D_image.jpg) 
-*(Note: Upload your 3D image or a result plot here)*
+
 
 ## 🚀 Overview
 This project implements a servo-free 2D acoustic imaging system using an ultrasonic phased array. By controlling the phase delay of signals sent to multiple transducers, we can "steer" the acoustic beam electronically (Beamforming) without moving parts.
