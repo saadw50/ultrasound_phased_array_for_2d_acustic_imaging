@@ -1,4 +1,41 @@
-# 🛰️ Utrasound phased array for 2D acoustic imaging using beamforming (Servo-Free)
+# Ultrasound Phased Array for 2D Acoustic Imaging
+
+![Project Banner](3D_image.jpg) 
+*(Note: Upload your 3D image or a result plot here)*
+
+## 🚀 Overview
+This project implements a servo-free 2D acoustic imaging system using an ultrasonic phased array. By controlling the phase delay of signals sent to multiple transducers, we can "steer" the acoustic beam electronically (Beamforming) without moving parts.
+
+## 🛠️ Hardware Architecture
+* **Transducers:** [Number]x ultrasonic transducers (40kHz).
+* **Microcontroller:** [Arduino/ESP32?] 
+* **Driver Circuit:** Custom PCB for TX/RX switching.
+
+### Circuit Design
+| Transmitter (TX) | Receiver (RX) |
+| :---: | :---: |
+| ![TX](hardware/tx_design.png) | ![RX](hardware/rx_design.png) |
+
+## 💻 Software & Theory
+### Beamforming Logic
+The phase shift $\Delta \phi$ required to steer the beam by angle $\theta$ is calculated as:
+$$\Delta \phi = \frac{2 \pi d \sin(\theta)}{\lambda}$$
+Where:
+* $d$ = distance between transducers
+* $\lambda$ = wavelength of the sound wave
+
+### Files
+* `firmware/ultrasonic_shape_rudder.ino`: C++ code for the microcontroller to handle pulse timing.
+* `src/shape_plotter.py`: Python script to visualize the received echo data in 2D.
+
+## ⚙️ How to Run
+1.  **Hardware:** Assemble the PCB as shown in `hardware/schematic.pdf`.
+2.  **Firmware:** Upload the `.ino` code to your microcontroller.
+3.  **Visualization:** Install dependencies and run the plotter:
+    ```bash
+    pip install -r requirements.txt
+    python src/shape_plotter.py
+    ```
 
 <h1 align="center">Hi 👋, I'm Shad Ebny Wahid</h1>
 <h3 align="center">A BSc Student in Electrical and Electronic Engineering at Jamalpur Science and Technology University, Bangladesh</h3>
